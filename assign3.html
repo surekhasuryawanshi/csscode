@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+       #div{
+        border: 1px solid;
+        width: 350px;
+        height: 450px;
+        
+        
+        background-color: rgb(92, 15, 120);
+        margin:0px auto;
+       }
+       #child{
+        width: 250px;
+        height: 350px;
+        border: 1px solid;
+        margin-top: 50px;
+        background-color: white;
+       }
+       .input{
+         border: none;
+         border-bottom: 1px solid;
+         padding-bottom: 5px;
+       }
+       #btn{
+        width: 200px;
+        height: 40px;
+        border-radius: 20px;
+        font-weight: bold;
+        box-shadow: 5px ;
+        
+       }
+       #h{
+        margin-left: -70px;
+       }
+    </style>
+</head>
+<body>
+    <div id="div"><center>
+        <div id="child"><center>
+        <h3><b>Login</b></h3>
+        <hr>
+          <br>  
+            <input type="text" placeholder="username" class="input">
+            <br><br>
+            <input type="password" placeholder="password" class="input">
+            <br><br>
+            <h5 id="h">forget password?</h5>
+  
+            <input type="button" value="Login" id="btn">
+            <br>
+            <h5>Not a Member?<a href="">signUp</a></h5>
+        </center>
+        </div></center>
+    </div>
+</body>
+</html>
