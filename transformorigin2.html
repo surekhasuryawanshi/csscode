@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            height: 200px;
+            width: 200px;
+            border: 1px solid;
+            margin: auto;
+            margin-top: 100px;
+            perspective: 800px;
+        }
+        .child{
+            height: 198px;
+            width: 148px;
+            border: 1px solid;
+            transition: 2s all linear;
+            background-color: aqua;
+            margin: auto;
+
+        }
+        #child1:hover{
+            transform: rotatex(360deg);
+            transform-origin: top left;
+            
+        }
+        #child2:hover{
+            transform: rotatex(360deg);
+            transform-origin: top center;
+            
+        }
+        #child3:hover{
+            transform: rotatex(180deg);
+            transform-origin: top right;
+            
+        }
+        #child4:hover{
+            transform: rotatex(180deg);
+            transform-origin: left center;
+            
+        }
+        #child5:hover{
+            transform: rotatex(180deg);
+            transform-origin: bottom left;
+            
+        }
+        #child6:hover{
+            transform: rotatex(180deg);
+            transform-origin: bottom center;
+            
+        }
+        #child7:hover{
+            transform: rotatex(180deg);
+            transform-origin: bottom right;
+            
+        }#child8:hover{
+            transform: rotatex(180deg);
+            transform-origin: top right;
+            
+        }
+        #child9:hover{
+            transform: rotatex(180deg);
+            transform-origin: center;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <div  class="child" id= "child1"></div>
+    </div>
+    <div class="parent">
+        <div  class="child" id= "child2"></div>
+        </div>
+        <div class="parent">
+            <div  class="child" id= "child3"></div>
+            </div>
+           
+                <div class="parent">
+                    <div  class="child" id= "child5"></div>
+                    </div>
+                    <div class="parent">
+                        <div  class="child" id= "child5"></div>
+                        </div>
+                        <div class="parent">
+                            <div  class="child" id= "child6"></div>
+                            </div>
+                            <div class="parent">
+                                <div  class="child" id= "child7"></div>
+                                </div>
+                                <div class="parent">
+                                    <div  class="child" id= "child8"></div>
+                                    </div> 
+                                    <div class="parent">
+                                        <div  class="child" id= "child9"></div>
+                                        </div>           
+</body>
+</html>
