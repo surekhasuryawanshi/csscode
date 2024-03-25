@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            border: none;
+            border-bottom: 7px solid red;
+            display: flex;
+            justify-content: space-evenly;
+            transform: rotatex(45deg);
+            /* perspective: 100px; */
+            width: 500px;
+            margin: auto;
+            margin-top: 500px;
+        }
+        ul li{
+           list-style: none;
+           height: 50px;
+           width: 50px;
+           border: 1px solid;
+           border-radius: 50%;
+           animation: bounce 2s linear infinite;
+           margin-bottom: 2px;
+
+        }
+        #ball1{
+            background-color: red;
+            animation-direction: alternate;
+        }
+        #ball2{
+            background-color: dodgerblue;
+            animation-delay: 200ms;
+        }
+        #ball3{
+            background-color: yellow;
+        }
+        #ball4{
+            background-color: black;
+            animation-delay: 200ms;
+        }
+        #ball5{
+            background-color: brown;
+        }
+        
+        @keyframes bounce {
+            from{
+                translate: 0px 0px;
+                /* transform: rotatex(0deg) rotatey(0deg); */
+            }
+            to{
+                translate:  0px -150px;
+                /* transform-style: preserve-3d; */
+                /* transform: rotatex(360deg); */
+            }
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li id="ball1"></li>
+        <li id="ball2"></li>
+        <li id="ball3"></li>
+        <li id="ball4"></li>
+        <li id="ball5"></li>
+
+    </ul>
+</body>
+</html>
