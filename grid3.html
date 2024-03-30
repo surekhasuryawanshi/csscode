@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .parent{
+            display: grid;
+            background-color: aqua;
+            grid-template-columns: auto auto auto auto;
+            padding: 10px;
+            gap: 10px;
+        }
+        .block{
+            background-color:rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+        @media(min-width:100px) and (max-width:700px){ 
+            .parent{
+            display: grid;
+            background-color: aqua;
+            grid-template-columns: auto auto;
+            padding: 10px;
+            gap: 10px;
+        }
+        @media(min-width:701px) and (max-width:1000px){ 
+            .parent{
+            display: grid;
+            background-color: aqua;
+            grid-template-columns: auto auto auto;
+            padding: 10px;
+            gap: 10px;
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="block" id="block1">block1</div>
+        <div class="block" id="block2">block2</div>
+        <div class="block" id="block3">block3</div>
+        <div class="block" id="block4">block4</div>
+        <div class="block" id="block5">block5</div>
+        <div class="block" id="block6">block6</div>
+        <div class="block" id="block7">block7</div>
+        <div class="block" id="block8">block8</div>
+        <div class="block" id="block9">block9</div>
+        <div class="block" id="block10">block10</div>
+        <div class="block" id="block11">block11</div>
+        <div class="block" id="block12">block12</div>
+        </div>
+    </body>
+    </html>
+</body>
+</html>
